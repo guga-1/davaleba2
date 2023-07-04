@@ -1,0 +1,73 @@
+1.
+numbers = {}
+for i = 1, 100 do
+  table.insert(numbers, i)
+end
+2.
+
+local variable = 10
+
+
+local number = math.random(1, 100)
+
+
+variable = variable + number
+
+
+print(variable)
+
+3.
+
+local random = math.random(1, 20)
+
+
+if random > 10 then
+  print(true)
+else
+  print("false")
+end
+
+4.
+
+local numbers = {}
+
+
+for i = 1, 10 do
+  local random = math.random(1, 100)
+  table.insert(numbers, random)
+end
+
+
+local sum = 0
+for _, number in ipairs(numbers) do
+  sum = sum + number
+end
+
+
+if sum % 2 == 0 then
+  print(true)
+else
+  print(false)
+end
+
+5.
+
+local oddNumbers = {}
+local evenNumbers = {}
+
+for i = 1, 10 do
+  local random = math.random(1, 100)
+  if randomNumber % 2 == 0 then
+    table.insert(evenNumbers, random)
+  else
+    table.insert(oddNumbers, random)
+  end
+end
+
+if #evenNumbers > #oddNumbers and #evenNumbers > 700 then
+  print(true)
+else
+  print(false)
+end
+
+
